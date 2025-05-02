@@ -23,11 +23,15 @@ class ProjectInputPageWithId extends StatelessWidget {
           return const Scaffold(body: Center(child: Text('プロジェクトが見つかりません')));
         }
 
+        final projectData = snapshot.data!;
+        final projectName = projectData['name'] ?? '無名プロジェクト';
+
         final user = FirebaseAuth.instance.currentUser;
         return Scaffold(
-          appBar: AppBar(title: const Text('申請フォーム')),
+          appBar: AppBar(title: Text('$projectName')),
           body: ProjectInputPage(
             projectDoc: snapshot.data!,
+            user: user,
           ),
         );
       },
