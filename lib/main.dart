@@ -9,6 +9,14 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  //if (Firebase.apps.isEmpty) {
+    //await Firebase.initializeApp();
+  //}
+  //if (Firebase.apps.isEmpty) {
+    /*await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );*/
+  //}
   runApp(MyApp());
 }
 

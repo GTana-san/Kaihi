@@ -98,7 +98,9 @@ class _InputPageState extends State<InputPage> {
         ),
       ),
       drawer: CustomDrawer(user: widget.user),
-      body: ProjectInputPage(
+      body: _selectedProject == null
+          ? const Center(child: Text('プロジェクトを選択してください'))
+          : ProjectInputPage(
         user: widget.user,
         projectDoc: _selectedProject,
       ),

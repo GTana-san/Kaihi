@@ -31,3 +31,4 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_KAIHI }}"
           channelId: live
           projectId: kaihi-30976
+          entryPoint: build/web

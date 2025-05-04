@@ -65,11 +65,13 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyATqxtYu6rgDdsAi1zbsXoKCbkc6F79wK8',
+    apiKey: 'AIzaSyAheytq45fuCbmXITxZmd2cxe0ciYAu3iQ',
     appId: '1:297343455729:ios:0a986b2f98b4a8ac547450',
     messagingSenderId: '297343455729',
     projectId: 'kaihi-30976',
     storageBucket: 'kaihi-30976.firebasestorage.app',
+    iosClientId: '297343455729-e4m22ld9s7l0s9aiv7j6fn5975lr9gb6.apps.googleusercontent.com',
     iosBundleId: 'com.example.kaihi',
   );
+
 }
